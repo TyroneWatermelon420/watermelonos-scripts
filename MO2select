@@ -1,0 +1,13 @@
+#!/bin/bash
+
+instances="MO2SSE\nMO2FNV\nMO2FO3\nMO2FO4\nMO2OBV"
+
+chosen=$(echo -e "$instances" | dmenu -c -l 5)
+
+case "$chosen" in
+    MO2SSE) MO2SSE ;;
+    MO2FNV) MO2FNV ;;
+    MO2FO3) MO2FO3 ;;
+    MO2FO4) MO2FO4 ;;
+    MO2OBV) MO2OBV ;;
+esac
