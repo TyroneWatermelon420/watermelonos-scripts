@@ -1,0 +1,2 @@
+#!/bin/bash
+gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/22330 /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-9/proton run /home/erik/Drives/NVMe/Games/MO2OBV/nxmhandler.exe "$1"

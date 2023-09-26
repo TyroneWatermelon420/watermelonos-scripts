@@ -1,11 +1,12 @@
 #!/bin/bash
 
+colors="-nb #2e3440 -nf #bbbbbb -sb #5e81ac -sf #eeeeee"
 instances="MO2SSE\nMO2FNV\nMO2FO3\nMO2FO4\nMO2OBV"
 
-chosen=$(echo -e "$instances" | dmenu -c -l 5)
+chosen=$(echo -e "$instances" | dmenu -c -l 5 $colors)
 
 case "$chosen" in
-    MO2SSE) MO2SSE ;;
+    MO2SSE) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-15/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
     MO2FNV) MO2FNV ;;
     MO2FO3) MO2FO3 ;;
     MO2FO4) MO2FO4 ;;
