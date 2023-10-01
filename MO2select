@@ -5,15 +5,14 @@ case "$dwm_theme" in
     nord) colors="-nb #2E3440 -nf #88C0D0 -sb #4C566A -sf #33ccff" ;;
 esac
 
-#colors="-nb #2e3440 -nf #bbbbbb -sb #5e81ac -sf #eeeeee"
 instances="MO2SSE\nMO2FNV\nMO2FO3\nMO2FO4\nMO2OBV"
 
 chosen=$(echo -e "$instances" | dmenu -c -l 5 $colors)
 
 case "$chosen" in
-    MO2SSE) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-15/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
-    MO2FNV) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/22380/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-15/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
-    MO2FO3) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-15/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
-    MO2FO4) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/377160/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-15/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
-    MO2OBV) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-15/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
+    MO2SSE) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-16/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
+    MO2FNV) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/22380/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-16/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
+    MO2FO3) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-16/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
+    MO2FO4) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/377160/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-16/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
+    MO2OBV) gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830/ /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-16/proton run /home/erik/Drives/NVMe/Games/MO2SSE/ModOrganizer.exe ;;
 esac
