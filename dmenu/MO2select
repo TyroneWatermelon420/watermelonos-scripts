@@ -4,7 +4,7 @@ steam="gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEA
 
 nvmeGames="/home/erik/Drives/NVMe/Games/"
 
-proton="GE-Proton8-20"
+proton="GE-Proton8-21"
 
 instances="Skyrim Special Edition\nFallout New Vegas\nFallout 3\nFallout 4\nOblivion"
 
