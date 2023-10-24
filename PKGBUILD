@@ -29,9 +29,5 @@ prepare() {
 
 package() {
   cd "${pkgname}"  
-  make PREFIX=/usr DESTDIR="${pkgdir}" install
-  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-  install -Dm644 README "${pkgdir}/usr/share/doc/${pkgname}/README.md"
-  install -Dm644 dwm.desktop "${pkgdir}/usr/share/xsessions/dwm.desktop"
 }
 
