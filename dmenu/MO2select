@@ -8,7 +8,7 @@ proton="GE-Proton8-21"
 
 instances="Skyrim Special Edition\nFallout New Vegas\nFallout 3\nFallout 4\nOblivion"
 
-chosen=$(echo -e "$instances" | dmenu -c -l 5)
+chosen=$(echo -e "$instances" | dmenu -l 5 -p "Choose your instance:" -z 450)
 
 case "$chosen" in
     "Skyrim Special Edition") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2SSE/ModOrganizer.exe ;;
