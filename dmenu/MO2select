@@ -1,18 +1,26 @@
 #!/bin/bash
 
-steam="gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata"
+steam="gamemoderun mangohud PROTON_ENABLE_NVAPI=1 VKD3D_CONFIG=dxr STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata"
 nvmeGames="/home/erik/Drives/NVMe/Games/"
 proton=`/bin/ls /home/$USER/.steam/root/compatibilitytools.d/ | awk 'END{print}'`
 instances="Skyrim Special Edition\nFallout New Vegas\nFallout 3\nFallout 4\nOblivion\nCyberpunk 2077"
 chosen=$(echo -e "$instances" | dmenu -l 6 -p "Choose your instance:" -z 450)
 
 case "$chosen" in
-    "Skyrim Special Edition") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2SSE/ModOrganizer.exe ;;
-    "Fallout New Vegas") $steam/22380/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/ModOrganizer.exe ;;
-    "Fallout 3") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FO3/ModOrganizer.exe ;;
-    "Fallout 4") $steam/377160/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FO4/ModOrganizer.exe ;;
-    "Oblivion") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2OBV/ModOrganizer.exe ;;
-    "Cyberpunk 2077") $steam/1091500/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2CP2077/ModOrganizer.exe ;;
+    "Skyrim Special Edition") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2SSE/ModOrganizer.exe
+        exit 0
+        ;;
+    "Fallout New Vegas") $steam/22380/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/ModOrganizer.exe
+        exit 0
+        ;;
+    "Fallout 3") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FO3/ModOrganizer.exe
+        exit 0
+        ;;
+    "Fallout 4") $steam/377160/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FO4/ModOrganizer.exe
+        exit 0
+        ;;
+    "Oblivion") $steam/489830/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2OBV/ModOrganizer.exe
+        exit 0
+        ;;
+    "Cyberpunk 2077") $steam/1091500/ /home/erik/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2CP2077/ModOrganizer.exe
 esac
-
-exit 0

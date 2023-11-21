@@ -1,2 +1,3 @@
 #!/bin/bash
-STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/1091500 /home/erik/.steam/root/compatibilitytools.d/GE-Proton8-22/proton run /home/erik/Drives/NVMe/Games/MO2CP2077/nxmhandler.exe "$1"
+proton=`/bin/ls /home/$USER/.steam/root/compatibilitytools.d/ | awk 'END{print}'`
+STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/1091500 /home/erik/.steam/root/compatibilitytools.d/$proton/proton run /home/erik/Drives/NVMe/Games/MO2CP2077/nxmhandler.exe "$1"

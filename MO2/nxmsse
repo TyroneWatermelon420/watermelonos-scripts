@@ -1,20 +1,3 @@
 #!/bin/bash
-
-steam="gamemoderun mangohud STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata"
-nvmeGames="/home/erik/Drives/NVMe/Games/"
 proton=`/bin/ls /home/$USER/.steam/root/compatibilitytools.d/ | awk 'END{print}'`
-
-while getopts 'lha:' OPTION; do
-    case "$OPTION" in
-        s)
-            $steam/489840/ /home/$USER/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2SSE/nxmhandler "$1" ;;
-        v)
-            $steam/22380/ /home/$USER/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FNV/nxmhandler "$1" ;;
-        3)
-            $steam/22370/ /home/$USER/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FO3/nxmhandler "$1" ;;
-        4)
-            $steam/377160/ /home/$USER/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2FO4/nxmhandler "$1" ;;
-        o)
-            $steam/22330/ /home/$USER/.steam/root/compatibilitytools.d/$proton/proton run $nvmeGames/MO2OBV/nxmhandler "$1" ;;
-    esac
-done
+STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam STEAM_COMPAT_DATA_PATH=/home/erik/Drives/NVMe/SteamLibrary/steamapps/compatdata/489830 /home/erik/.steam/root/compatibilitytools.d/$proton/proton run /home/erik/Drives/NVMe/Games/MO2SSE/nxmhandler.exe "$1"
